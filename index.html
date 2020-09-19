@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Responsive navigation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css"> 
+   ul{
+  list-style-type: none;
+  float:center;
+  margin-top:  0%;
+  margin-left: 10% ;
+  border-radius:5%;
+  line-height: 200%;
+  
+  border-width: 100%;
+  border:block 3% outset;
+
+}
+
+ul li{
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color:white;
+  padding:5% 10%;
+  border:3px solid transparent;
+  transition:0.6s ease;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+} 
+ul li a:hover{
+  background-color:red;
+  color: black;
+}
+  </style>
+</head>
+<body>
+    <header>
+      <div class="logo">PassVault</div>
+      <nav class="active">
+        <ul>
+          <li><a href="aboutus.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="try1.php">Login</a></li>
+           <li><a href="index.html"  class="active">Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+ ></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu-toggle').click(function(){
+      $('nav').toggleClass('active')
+    })
+  })
+ </script>
+ <div class="content" style="max-width:1100px;float:center ;margin-top:80px;margin-left:100px;margin-bottom:80px">
+      <br><br><h2 class="hd">Register</h2>
+   <form class="container" action="insert1.php" method="POST">
+    <div class="section">
+         <input class="input border hover-border-black" style="width:70%;" type="text" placeholder="FirstName" name="firstname" required>
+    </div>
+     <div class="section">
+     
+      <input class="input border hover-border-black" style="width:70%;" type="text" placeholder="LastName" name="lastname" required>
+    </div>
+    <div class="section">
+      
+      <input class="input border hover-border-black" style="width:70%;" type="email" placeholder="Email" name="email" required>
+    </div>
+    <div class="section">
+    Gender:<br><input type="radio" name="gender"  value="m" required>Male<br>
+    <input type="radio" name="gender" value="f" required>Female<br>
+    <input type="radio" name="gender" value="o" required>Others<br>
+    </div>
+    <div class="section">
+      
+      <input class="input border hover-border-black" style="width:70%"; type="text" placeholder="Username" name="username" required>
+    </div>
+    <div class="section">
+      
+      <input class="input border hover-border-black" style="width:70%;" type="Password" placeholder="Password" name="password" required>
+    </div>
+    <button type="submit" class="button block black" style="width:60%;">Register</button>
+  
+  </form>
+</div>
+</body>
+</html>

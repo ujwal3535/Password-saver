@@ -1,0 +1,137 @@
+body{
+	margin:0;
+	margin-top: -80px;
+	padding:0;
+	font-family:sans-serif;
+    	  background-image: url("digital.jpg");
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+}
+header{
+	position:absolute;
+	top: 0;
+	left:0;
+	padding: 0 100px;
+	background:#262626;
+	width: 100%;
+	box-sizing:border-box;
+
+}
+header .logo{
+	color: red;
+	height:50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left;
+	font-weight: bold;
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+header nav ul li a{
+  height:50px;
+  line-height:50px;
+  padding:0 20px;
+  color:#fff;
+  text-decoration: none;
+  
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+color:#fff;
+background: red;
+
+}
+.menu-toggle{
+ color:white;
+ float:right;
+ line-height: 50px;
+ font-size: 24px;
+ cursor:pointer;
+ display:none;	
+}
+
+@media(max-width:991px)
+{
+	header
+	{
+		padding:0 20px;
+	}
+	.menu-toggle{
+		display:block;
+
+
+	}
+	header nav
+	{
+	    position:absolute;
+	    width:100%;
+	    height:calc( 100vh-50px);
+	    background: #333;
+	    top:50px;
+	    left:-100%;
+	    transition: 0.5s;
+	}
+	header nav.active{
+		left: 0;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+	}
+	header nav ul li a{
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+	}
+
+
+.container{padding:0.01em 16px}.panel{margin-top:16px;margin-left:1px ;margin-right: 16px;margin-bottom:16px}
+.content,.auto{margin-left:auto;margin-right:auto}.content{max-width:980px}.auto{max-width:1140px}
+
+
+
+}
+.black,.hover-black:hover{
+	color:#fff!important;
+	background-color:#000!important}
+.block{
+	display:block;width:100%}
+.button{
+	border:none;
+	display:inline-block;
+	padding:10px 16px;
+	vertical-align:center;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap}
+
+
+
+
+.input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:90%}
+.border{border:1px solid #ccc!important}
+.hover-border-black:hover{border-color:#000!important}
+.section{margin-top:18px!important;margin-left: 100px!important;margin-bottom:18px!important}
+.container:after,.container:before{content:"";display:table;clear:both}
+.button{border:none;display:inline-block;padding:8px 16px;margin-left: 100px!important;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+
+.hd{
+	
+    font-style: italic;
+    color: red;
+    margin-left: 100px;
+    margin-top: 40px; 
+    }
